@@ -1,0 +1,40 @@
+crossbow {
+  display:flex;
+
+  flex-direction:row; /*default WE*/
+  flex-direction:row-reverse; /*EW*/
+  flex-direction: column; /*NS*/
+  flex-direction:column-reverse; /* SN */
+
+/*Horizontally aligns the flex items when,
+the items do not use all available space on the main-axis*/
+  justify-content: flex-start; /*defualt aligns the flex items at the beginning of the container */
+  justify-content: flex-end; /* laligns the flex items at the end of the container*/
+  justify-content: center; /* aligns the flex items at the center of the container*/
+  justify-content: space-between; /* displays the flex items with space between the lines*/
+  justify-content: space-around; /* displays the flex items with space before, between, and after the lines */*/
+
+/*Vertically aligns the flex items when,
+the items do not use all available space on the cross-axis*/
+  align-items:flex-start; /*W,E ,top*/ /*N,S ,left*/ 
+  align-items:flex-end;   /*W,E ,bottom//*N,S, right*/
+  align-items: stretch; /*default stretches the flex items to fill the container*/
+  align-items: center; /* aligns the flex items in the middle of the container*/
+  align-items: baseline; /*aligns the flex items such as their baselines aligns*/ 
+  
+  align-content: space-between; /* displays the flex lines with equal space between them*/
+  align-content: space-around; /*displays the flex lines with space before, between, and after them*/
+  align-content: stretch; /*stretches the flex lines to take up the remaining space (this is default)*/
+
+/*Perfect Centering*/
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+crossbow {
+  display:flex;
+  flex-direction:row; 
+  justify-content: flex-end;
+}

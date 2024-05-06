@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+:root {
+  --blue: #dd7146;
+}
+
+.logoo{
+  display: inline-block;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* containers */
+/* .container-null {
+  font-family: "Georgia";
+  margin: 0px;
+  background-color: #dd7146; /* barik balaye footer background */
+
+
+/* .container-null img {
+  max-width: 80%;
+  width: 600px;
+  height: 337px;
+} */
+
+
+
+
+.container-header {
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+  /*background-color: #dd7146;*/ /* header background */
+  /* white-space: nowrap;
+  max-height: 120px;
+  display: flex;
+  align-items : center;
+  justify-content: center; */
+  background-color: #212529;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.container-header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 7vw;
+  font-weight: bold;
+  color: #ffffff;
+  /* margin: 0px;
+  max-width: 70%;
+  min-width: 50%;
+  padding-left: 2%;
+  display: inline-block;
+  font-size: 8vw;
+  font-weight: bold;
+  color: #ffffff;
+  max-height: 120px; */
+
+}
+
+
+
+
+/* ----------------body container start---------------- */
+.container-body {
+  margin: 0px;
+  max-width: 100%;
+  min-width: 720px;
+  padding: 30px;
+  background-color: #fff7eb; /* page background */
+  color: #000000;
+  align-items: center;
+  justify-content: begin;
+}
+
+
+pbody {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  white-space: normal;
+  text-align: justify;
+	text-justify: values;
+  margin: 0px 130px;
+}
+pbody p {
+  margin: 0px 20%;
+}
+pbody h2{
+  margin: 0px 20%
+}
+
+
+/* ----------------body container end---------------- */
+/* ----------------hr line start---------------- */
+
+
+.hr-line {
+  max-width: 90%;
+  margin: 25px auto;
+  text-align: center;
+}
+.hr-line .hr-text {
+  font-size: 20px;
+  position: relative;
+  border: 0;
+  height: 1.5em;
+}
+.hr-line .hr-text:before {
+  content: "";
+  background: linear-gradient(to right, transparent, #b2b2b2, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-line .hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  color: gray;
+  background-color: #fff7eb; /* postdoc background */
+}
+
+/* ----------------hr line end---------------- */
+
+/* ----------------members page start--------------- */
+.member {
+  width: 70%;
+  /*border: 1px solid red;*/
+  padding: 20px;
+  overflow: auto;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  background-color: #f1dcd99d; /* member box background */
+}
+
+.member img {
+  margin-right: 15px;
+  float: left;
+  width: 25%
+}
+
+.member h3,
+.member p{
+  margin: 2px 0 0 0;
+}
+
+.member h3{
+  display: inline;
+}
+/* ----------------members page end--------------- */
+
+/* ----------------Research collapsible start---------------- */
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+
+/* Plus Minus sign */
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: rgb(151, 25, 171);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* ----------------research collapsible end---------------- */
+
+/* ----------------publication page start--------------- */
+/* ---Read more links-start */
+/* b {
+  color: #18272F;
+  position: relative;
+  text-decoration: none;
+}
+
+b::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+b:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+} */
+/* ---Read more links-close */
+.read{
+  color: #007bff;
+  position: relative;
+  /* text-decoration: none; */
+}
+.read::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.read:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+.more{
+	display: none;
+}
+
+.post:not(:last-child){
+	margin-bottom: 30px;
+}
+/* button{
+	margin-top: 15px;
+	display: block;
+	background-color: #e41d3f;
+	color: white;
+	border:none;
+	outline: none;
+	padding: 8px 20px;
+	cursor: pointer;
+	font-size: 20px;
+} */
+
+/* .read-more-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.read-more-btn{
+  color: #dd7146;
+}
+
+.read-more-text{
+  display: none;
+}
+
+.read-more-text--show{
+  display: inline;
+} */
+
+/* White dot for under altmeric */
+.dot { 
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* ------ row column ------- */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+.grid-table-1 {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-rows: auto;
+
+}
+
+.grid-table-2 {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+
+}
+
+.grid-table-3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}
+
+.publication {
+  width: 70%;
+  /*border: 1px solid red;*/
+  padding: 20px;
+  overflow: auto;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  background-color: #f1dcd99d; /* publication box background */
+} 
+
+.publication img {
+  margin-right: 15px;
+  float: left;
+  /* width: 25% */
+}
+
+.publication h3,
+.publication p{
+  margin: 2px 0 0 0;
+}
+
+.publication h3{
+  display: inline;
+}
+/* ----------------publication page end--------------- */
+
+
